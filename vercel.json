@@ -1,7 +1,8 @@
 {
-  "buildCommand": "cd frontend && npm install && npm run build",
-  "outputDirectory": "frontend/build",
+  "buildCommand": "npm run build",
+  "outputDirectory": "build",
   "installCommand": "npm install",
+  "rootDirectory": "frontend",
   "env": {
     "REACT_APP_API_URL": "https://learning-platform-backend-944j.onrender.com"
   }
