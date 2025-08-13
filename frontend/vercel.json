@@ -28,6 +28,6 @@
     }
   ],
   "env": {
-    "REACT_APP_API_URL": "@backend-url"
+    "REACT_APP_API_URL": "https://learning-platform-backend-944j.onrender.com"
   }
 }
