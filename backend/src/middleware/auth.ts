@@ -2,13 +2,14 @@ import { Request, Response, NextFunction } from 'express';
 import jwt from 'jsonwebtoken';
 import { createError } from './errorHandler';
 
-export interface AuthRequest extends Request {
+// Use standard Express Request type with user property
+export type AuthRequest = Request & {
   user?: {
     id: string;
     email: string;
     role: string;
   };
-}
+};
 
 export const authenticateToken = (req: AuthRequest, res: Response, next: NextFunction) => {
   const authHeader = req.headers['authorization'];

@@ -4,12 +4,19 @@ declare global {
   var require: NodeRequire;
 }
 
-declare module 'pg' {
-  export * from 'pg';
+// Ensure Express types are properly available
+declare module 'express' {
+  interface Request {
+    user?: {
+      id: string;
+      email: string;
+      role: string;
+    };
+  }
 }
 
-declare module 'express' {
-  export * from 'express';
+declare module 'pg' {
+  export * from 'pg';
 }
 
 declare module 'cors' {
