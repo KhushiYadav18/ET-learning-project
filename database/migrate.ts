@@ -1,4 +1,4 @@
-import { connectDatabase, getDatabase } from '../backend/src/config/database';
+import { connectDatabase, getDatabase } from '../src/config/database';
 import { readFileSync } from 'fs';
 import { join } from 'path';
 import { v4 as uuidv4 } from 'uuid';

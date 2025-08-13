@@ -55,7 +55,7 @@ This guide will walk you through deploying the Learning Platform to Vercel (fron
    JWT_SECRET=your-super-secret-jwt-key
    JWT_EXPIRES_IN=7d
    DATABASE_URL=your-postgresql-connection-string
-   CORS_ORIGIN=https://your-frontend-domain.vercel.app
+   CORS_ORIGIN=*
    RATE_LIMIT_WINDOW_MS=900000
    RATE_LIMIT_MAX_REQUESTS=100
    MAX_FILE_SIZE=10485760
@@ -131,7 +131,7 @@ This guide will walk you through deploying the Learning Platform to Vercel (fron
 | `PORT` | Server port | `10000` |
 | `JWT_SECRET` | JWT signing secret | `your-secret-key` |
 | `DATABASE_URL` | PostgreSQL connection string | `postgresql://user:pass@host:port/db` |
-| `CORS_ORIGIN` | Allowed frontend origin | `https://your-app.vercel.app` |
+| `CORS_ORIGIN` | Allowed frontend origin | `*` (all origins) |
 
 ### Frontend (Vercel)
 | Variable | Description | Example |

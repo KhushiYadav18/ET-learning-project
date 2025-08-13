@@ -87,7 +87,7 @@ JWT_EXPIRES_IN=7d
 SQLITE_PATH=./database/learning_platform.db
 
 # CORS Configuration
-CORS_ORIGIN=http://localhost:3000
+CORS_ORIGIN=*
 
 # Rate Limiting
 RATE_LIMIT_WINDOW_MS=900000
